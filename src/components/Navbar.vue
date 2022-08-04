@@ -1,10 +1,17 @@
 <template>
-  <div>
-    <img src="../assets/pick-n-pay-logo.png" alt="logo" />
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <img src="../assets/pick-n-pay-logo.png" alt="logo" />
+      </div>
+      <div class="col">
+        <nav>
+          <router-link class="text-decoration-none" to="/">Home</router-link> |
+          <router-link class="text-decoration-none" to="/about">About</router-link> |
+          <router-link class="text-decoration-none" to="/products">Products</router-link>
+        </nav>
+      </div>
+    </div>
   </div>
   <router-view />
 </template>
@@ -14,9 +21,14 @@ export default {
   name: "Navbar",
 };
 </script>
-
 <style scoped>
-div {
-    
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+containr-fluid{
+  top: 0;
+  position: sticky;
 }
 </style>

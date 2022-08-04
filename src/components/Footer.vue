@@ -1,17 +1,20 @@
 <template>
-  <div class="footer">
-    <p>Copyright &copy</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <p>Copyright &copy</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-.footer {
-    
+<style scoped>
+.container-fluid {
+  bottom: 0;
+  position: sticky;
 }
 </style>
